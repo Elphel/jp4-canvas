@@ -3,6 +3,7 @@
 A template<br/>
 Convert JP4/JP46 image files (\*.jp4/\*.jp46) into human perceivable format.<br/>
 This includes reordering within JPEG blocks and demosaicing (bilinear interpolation).<br/>
+The result looks a bit pale - saturation is not calculated.
 Files in JPEG format are left untouched.
 ## Usage
 Replace <i>test.jp4</i>
