@@ -20,4 +20,4 @@ In Elphel cameras extra information is added to the EXIF header's
 ## More info:
 * [About JP4](http://wiki.elphel.com/index.php?title=JP4)
 * [Extra info in EXIF <i>MakerNote</i>](http://wiki.elphel.com/index.php?title=Exif)
-* Code references for JP4 deblocking and EXIF's <i>MakerNote</i>: [ImageJ-Elphel (JP46_Reader_camera.java)](https://github.com/Elphel/imagej-elphel/blob/master/src/main/java/JP46_Reader_camera.java)
+* Java code reference for JP4 deblocking and EXIF's <i>MakerNote</i>: [ImageJ-Elphel (JP46_Reader_camera.java)](https://github.com/Elphel/imagej-elphel/blob/master/src/main/java/JP46_Reader_camera.java)

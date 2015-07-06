@@ -1,5 +1,5 @@
 /*
-FILE NAME  : jp4canvas.js
+FILE NAME  : jp4-canvas.js
 DESCRIPTION: Converts jp4/jp46 files into human perceivable format in html5 canvas.             
 VERSION: 1.0
 AUTHOR: Oleg K Dzhimiev <oleg@elphel.com>
