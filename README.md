@@ -3,7 +3,7 @@
 A template<br/>
 Convert JP4/JP46 image files (\*.jp4/\*.jp46) into human perceivable format.<br/>
 This includes reordering within JPEG blocks and demosaicing (bilinear interpolation).<br/>
-Files in JPEG format are left untouched.
+Files in JPEG format are left untouched.<br/>
 Operations:
 * Read EXIF MakerNote field: color mode, flips, gammas.
 * Reorder Bayer Mosaic according to flips - initial mosaic=GRBG
@@ -22,8 +22,8 @@ Replace <i>test.jp4</i>
 ## EXIF
 In Elphel cameras extra information is added to the EXIF header's
 <i>MakerNote</i> field:
-> COLOR_MODE = (MakerNote[10]>>4) & 0x0f;
-> FLIPH      = (MakerNote[10]   ) & 0x1;
+> COLOR_MODE = (MakerNote[10]>>4) & 0x0f;<br/>
+> FLIPH      = (MakerNote[10]   ) & 0x1;<br/>
 > FLIPV      = (MakerNote[10]>>1) & 0x1;
 
 ## More info:
