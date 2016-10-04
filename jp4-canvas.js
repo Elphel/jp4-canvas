@@ -7,6 +7,8 @@ LICENSE: AGPL, see http://www.gnu.org/licenses/agpl.txt
 Copyright (C) 2015 Elphel, Inc.
 */
 
+var jp4name = "test.jp4"
+
 var FLIPV = 0;
 var FLIPH = 0;
 
@@ -23,12 +25,23 @@ var BayerMosaic = [
 ];
 
 $(function(){
+  parseURL();
   initCanvas();
 });
 
+function parseURL() {
+    var parameters=location.href.replace(/\?/ig,"&").split("&");
+    for (var i=0;i<parameters.length;i++) parameters[i]=parameters[i].split("=");
+    for (var i=1;i<parameters.length;i++) {
+        switch (parameters[i][0]) {
+            case "file": jp4name = parameters[i][1];break;
+        }
+    }
+}
+
 function initCanvas(){
   var heavyImage = new Image();
-  heavyImage.src = "test.jp4";
+  heavyImage.src = jp4name;
   
   var canvas = $("<canvas>",{id:"canvas"}).css({
     position: "absolute",
